@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_book_store_app/model/category.dart';
+import 'package:flutter_book_store_app/models/category.dart';
 
 /// Category list
 class CategoryList {

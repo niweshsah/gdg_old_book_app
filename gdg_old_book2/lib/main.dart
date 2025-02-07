@@ -1,25 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_book_store_app/screen/home_screen.dart';
+import 'package:flutter_book_store_app/screens/home_screen.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const BookStoreApp());
 }
 
-class MyApp extends StatelessWidget {
+class BookStoreApp extends StatelessWidget {
+  const BookStoreApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Book Store',
-      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: Colors.teal,
-        bottomNavigationBarTheme: BottomNavigationBarThemeData(
-          selectedItemColor: Colors.teal,
-          selectedLabelStyle: TextStyle(fontSize: 12.0),
-          showUnselectedLabels: false,
-        )
+        primarySwatch: Colors.blue,
+        scaffoldBackgroundColor: Colors.grey[100],
       ),
-      home: HomeScreen(),
+      home: const HomeScreen(),
     );
   }
 }
